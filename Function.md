@@ -1,12 +1,14 @@
 # C언어의 핵심! 함수
 
 ## 함수의 기본 형태
-    int main() { }
+    int main(int a, int b) { 
+        return 0;
+    }
 
 * int 는 **반환값의 데이터형**
 * main 은 **함수의 이름**
-* () 소괄호는 **전달받는 인수들**
-* {} 중괄호는 **함수의 정의**
+* (int a, int b) 소괄호는 **전달받는 인수들**
+* { return 0; } 중괄호는 **함수의 정의**
 	
 ### 함수를 만드는 이유
 main 함수 안에서만 모든 프로그램을 짜려고 하면 중복구문으로 인해 길이가 엄청나게 길어진다. 중복구문이 붙어있는 경우에는 반복문으로 해결할 수 있지만 붙어있지 않는 경우에는 얄짤없이 적어야 한다. 중복되는 구문을 함수로 떼어놓아서 필요할 때 불러와 사용해서 전체 길이를 줄인다.
@@ -19,19 +21,19 @@ main 함수 안에서만 모든 프로그램을 짜려고 하면 중복구문으
 
 1. 전달인자 O, 반환인자 O
   
-        int main(int a, int b) {}
+        int main(int a, int b) { return 0; }
 
 2. 전달인자 O, 반환값 X(출력)
 
-        void main(int a, int b) {}
+        void main(int a, int b) { return; }
 
 3. 전달인자 X, 반환값 O(입력)
 
-        int main(int a, int b) {}
+        int main(int a, int b) { return 0; }
 
 4. 전달인자 X, 반환값 X
 
-        void main(void) {}
+        void main(void) { return; }
 
 ### return이 갖는 두 가지 의미
 return 구문은 **함수를 빠져나가는 기능**과 **값을 반환하는 기능**을 가지고 있다. break 구문은 반복문 또는 조건문을 빠져나갈 때 사용하므로 혼동하지 말자.
