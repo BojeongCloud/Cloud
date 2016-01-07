@@ -53,7 +53,7 @@
   3. 컴파일된 결과물 링크(표시)
 
 
-# **02. 프로그램의 기본구성**
+## 프로그램의 기본구성
 
     #include <stdio.h> --- 1
 
@@ -84,3 +84,12 @@ main이라는 이름을 가진 void라는 입력의 형태를 가진 int로 출�
  
 5. 주석(메모)
 실행하지 않는다. 분석의 편리함, 혹은 다양한 실행결과의 확인을 위하여 사용한다. 이 함수를 출력할시, "Hello World! 3065" 으로 출력된다
+
+## Hello World 작성하기
+
+    #include <stdio.h>
+    
+    int main() {
+        printf("Hello World");
+    	
+        return 0;    }
