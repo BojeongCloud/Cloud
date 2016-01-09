@@ -9,10 +9,9 @@
 
 ### C언어의 역사와 특징
 **ALGOL 60(1960) > CPL(1963) > BCPL(1969) > B언어(1970) > C언어(1971)**  
-UNIX 운영체제의 개발을 위해 만든 고급(High-Level)언어  
-실제로 B언어 다음이라 C언어라 한다. ~~다음은 D언어인가...~~  
+UNIX 운영체제의 개발을 위해 만든 고급(High-Level)언어. 실제로 B언어 다음이라 C언어라 한다. ~~다음은 D언어인가...~~  
 기존 UNIX는 어셈블리(assembly)라는 저급(Low-Level)언어로 만들어졌다.  
-컴퓨터의 ISA(Instruction Set Architecture ex. Intelx86, ARM)가 바뀌게 되면 프로그램을 다시 짜야 한다.
+컴퓨터의 ISA(Instruction Set Architecture ex. Intelx86, ARM)가 바뀌어도 컴파일러만 있으면 다시 프로그램을 작성하지 않아도 된다.
 
 * 저급언어 = 컴퓨터가 이해하기 쉬운 언어
 * 고급언어 = 사람이 이해하기 쉬운 언어
