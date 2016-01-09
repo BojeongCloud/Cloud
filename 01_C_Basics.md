@@ -42,7 +42,7 @@
 
 2) 프로그램의 완성과정
 
-  ![사진추가하고 이글은 삭제바람](링크)
+ ![CAssemblyMachine](BJCloud/Image/CAssemblyMachine.png)
 
  * 완성과정의 이해
 
@@ -92,4 +92,5 @@ main이라는 이름을 가진 void라는 입력의 형태를 가진 int로 출�
     int main() {
         printf("Hello World");
     	
-        return 0;    }
+        return 0;
+    }
