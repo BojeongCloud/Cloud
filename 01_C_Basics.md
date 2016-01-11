@@ -28,8 +28,7 @@ CPU, 운영체제(OS) 등이 달라도 실행 가능하다.
 절차지향적이란 정해진 순서의 흐름을 중요시한다는 것을 의미한다.
 
 ### 프로그램의 완성과정
-
-![CAssemblyMachine](https://github.com/Manicarus/BJCloud/blob/master/Image/CAssemblyMachine.png)
+![CAssemblyMachine](/Images/CAssemblyMachine.png)
 
 #### 완성과정의 이해
 1. 프로그램의 작성
