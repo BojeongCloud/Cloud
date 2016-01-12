@@ -6,7 +6,7 @@
 * 다음 함수를 정의하세요. 
 
 ```int factorization(int number, int * factors);```  
-number의 소인수들을 factors 배열에 저장하는 함수를 정의해보자.
+number의 소인수들을 factors 배열에 저장하는 함수를 만들어보자.  
 factorization 함수의 반환값은 소인수의 개수이다.
 
 예시: number의 값이 8이었다면, 1, 2, 4, 8이 factors 배열에 저장되고, 4를 반환한다.  
