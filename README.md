@@ -1,6 +1,9 @@
 ## [공지사항](/Notices/Notice.md)
 링크로 뾰로롱~!
 
+## 윤성우의 열혈강의 동영상을 업로드했습니다.
+[Vimeo에서 윤성우의 열혈강의 C언어 보기!](https://vimeo.com/groups/bjcloud)
+
 ## 이 문서는 마크다운으로 편집되었습니다.
 마크다운 문법을 배우고자 한다면 아래를 참조하세요.  
 [서지스원@IT](http://sergeswin.com/1013#)
