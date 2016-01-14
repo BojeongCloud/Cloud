@@ -2,14 +2,15 @@
  * Factorization.c
  *
  *  Created on: 2016. 1. 14.
- *      Author: ������
+ *      Author: πË¡ˆ»∆
  */
 
 
 #include <stdio.h>
 #define NUM 8
 
-/* �� NUM�� ���� �ٲ��ָ� �ٲ� �� ���� ���� ���μ����ظ� �� �� �ִ�. */
+/* ¿ß NUM¿« ∞™¿ª πŸ≤„¡÷∏È πŸ≤„ ¡ÿ ∞™ø° ¥Î«— º“¿Œºˆ∫–«ÿ∏¶ «“ ºˆ ¿÷¥Ÿ. */
+/* From now on, please refrain yourself from typing Korean. Characters are not showing well. */
 
 int factorization(int number, int * factors);
 
@@ -20,12 +21,15 @@ int main() {
 
   count = factorization(NUM, factors);
 
-  printf("%d�� ���μ��� ������ %d��\n", NUM, count);
-  printf("%d�� ���μ��� ", NUM);
+  printf("%d¿« º“¿Œºˆ¿« ∞≥ºˆ¥¬ %d∞≥\n", NUM, count);
+  printf("%d¿« º“¿Œºˆ¥¬ ", NUM);
 
   for(i = 0; i < NUM; i++);
   {
-       printf("%d ", NUM);
+       printf("%d ", NUM); 
+       /* 여기에 NUM이 들어가야 하는 것은 아닌데... 
+        * 각 소인수가 들어가야 하는거니까 factors 배열의 인수가 출력되어야 하지 않을까?
+        * */
   }
 
   printf("\n");
