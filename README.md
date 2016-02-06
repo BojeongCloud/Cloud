@@ -1,5 +1,5 @@
 
-# 안녕하세요 보정고등학교 구름 C언어 동아리입니다.
+## 보정고등학교 구름 C언어 동아리입니다.
 ![Banner](Images/Cloud_Banner/Cloud_Banner.png)
 
 ## 알립니다
