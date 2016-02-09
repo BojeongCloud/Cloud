@@ -1,2 +1,5 @@
 # OS X FILES #
 *.DS_Store
+
+# Temporary Files #
+._*
