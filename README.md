@@ -22,6 +22,3 @@ JRE~~(JDK인가?)~~와 GCC, G++ 컴파일러가 설치가 되어있는지 확인
 
 또한 깃허브에서는 여러가지 기능들을 제공하고 있습니다. 아래 링크를 참조하세요.  
 [깃허브 Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.ko.md)
-
-
-### 구름의 발자취
