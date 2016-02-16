@@ -44,13 +44,13 @@ CPU, 운영체제(OS) 등이 달라도 실행 가능하다.
     int main(void) --- 2 
     {
     
-     printf("Hello World! \n %d", 3065); --- 3
+        printf("Hello World! \n %d", 3065); --- 3
      
-     return 0; --- 4
+        return 0; --- 4
      
-    /* ~~~~~ */ --- 5
-    
-    // --- 6
+        /* ~~~~~ */ --- 5
+        
+        // --- 6
     
     }
 
