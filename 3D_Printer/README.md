@@ -1,7 +1,13 @@
-## 메인보드
-[Melzi Reprap 1.1(http://reprap.org/wiki/Melzi)  
+# 3D 프린터
 
-전원부분이 조금 타버려서 RAMP 1.4라는 메인보드로 교체하려고 했으나, 갑자기 정상적으로 작동해서 교체하지는 않았다.
+## 메인보드
+![](/3D_Printer/Cloud_3D_Printer_Motherboard.png)
+
+[Melzi Reprap 1.1](http://reprap.org/wiki/Melzi)  
+
+전원부분이 조금 타버리고 압출기의 모터가 wobble거리는 문제가 있었다.  
+그래서 RAMP 1.4 + Arduino Mega 2560 메인보드로 교체하려고 했으나,  
+갑자기 정상작동해서 교체하지는 않았다.
 
 ### Can't connect to the Melzi (FTDI driver problem)
 There has been an issue where a FTDI driver update, pushed out through Microsoft update, disables Melzi controllers that have a non-genuine FTDI chip. This chip is used for USB communication, so the board may look like it's working (LED flashing) but doesn't show up correctly, and Arduino IDE/Pronterface can't connect to it.
@@ -16,6 +22,22 @@ If the chip has been effected by the driver (ie deemed fake), the device PID is 
 드라이버를 설치하는 방법은 다음 링크를 참고한다. [FTDI driver 설치하기](http://forums.reprap.org/read.php?1,417199,418768#msg-418768)
 
 ## Software
+
+사용하게될 소프트웨어는 크게 세 가지로 구분할 수 있다.  
+
+ - 호스트(Host)  
+	ex) Repetier Host, Printrun
+ 
+ - 슬라이서(Slicer)  
+	ex) Cura, Sli3r
+ 
+ - CAD  
+	ex) FreeCAD, AutoCAD, 123D Design
+ 
+모델링을 하지 않을 것이라면 CAD 프로그램을 필요하지 않으므로  
+3D 프린터를 다루기 위해 필수적으로 사용하는 것은 *호스트*와 *슬라이서*이다.
+
+보정 구름에서는 Repetier Host와 Sli3r을 사용한다.
 
 ### Repetier Host
 
