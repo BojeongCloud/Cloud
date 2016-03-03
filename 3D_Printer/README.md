@@ -11,8 +11,7 @@
 
 ### 컴퓨터가 Melzi 메인보드를 인식하지 못할 때
 프린터가 연결된 컴퓨터를 바꾸면 Melzi 메인보드를 인식하지 못할 수 있다.  
-Mac이나 Linux는 자동으로 드라이버를 인식하는 경우가 많은데,  
-Windows는 드라이버를 수동으로 설치해주어야 한다.
+Mac이나 Linux는 자동으로 드라이버를 인식하는 경우가 많은데, Windows는 드라이버를 수동으로 설치해주어야 한다.  
 이 때는 다음 링크를 통해서 드라이버를 다운받는다. [FTDI driver 다운받기](http://www.ftdichip.com/Drivers/VCP.htm)  
 드라이버를 설치하는 방법은 다음 링크를 참고한다. [FTDI driver 설치하기](http://forums.reprap.org/read.php?1,417199,418768#msg-418768)
 
