@@ -28,7 +28,7 @@ Mac이나 Linux는 자동으로 드라이버를 인식하는 경우가 많은데
 
  - 호스트(Host)  
    컴퓨터와 3D 프린터를 연결해주는 소프트웨어이다.  
-   3D 프린터의 X, Y, Z축의 움직임과 압출기 그리고 Hotend와 Heated Bed의 온도를 제어할 수 있다.
+   3D 프린터의 X, Y, Z축의 움직임과 압출기 그리고 Hotend와 Heated Bed의 온도를 제어할 수 있다.  
    ex) Repetier Host, Printrun
  
  - 슬라이서(Slicer)  
@@ -36,7 +36,7 @@ Mac이나 Linux는 자동으로 드라이버를 인식하는 경우가 많은데
    ex) Cura, Sli3r
  
  - CAD  
-   모델링 프로그램이다. FreeCAD도 괜찮고 123D Design을 사용하는 것도 좋다. 
+   모델링 프로그램이다. FreeCAD도 괜찮고 123D Design을 사용하는 것도 좋다.  
    ex) FreeCAD, AutoCAD, 123D Design, Blender
  
 보정 구름에서는 모델링 교육을 하지 않을 것이므로  
