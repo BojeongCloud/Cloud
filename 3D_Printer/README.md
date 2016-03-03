@@ -9,35 +9,41 @@
 그래서 RAMP 1.4 + Arduino Mega 2560 메인보드로 교체하려고 했으나,  
 갑자기 정상작동해서 교체하지는 않았다.
 
-### Can't connect to the Melzi (FTDI driver problem)
-There has been an issue where a FTDI driver update, pushed out through Microsoft update, disables Melzi controllers that have a non-genuine FTDI chip. This chip is used for USB communication, so the board may look like it's working (LED flashing) but doesn't show up correctly, and Arduino IDE/Pronterface can't connect to it.
-This thread describes the problem in detail: http://hackaday.com/2014/10/24/ftdi-screws-up-backs-down/ 
-Apparently, the only way to visually check the chip is described here: http://hackaday.com/2014/10/24/ftdi-screws-up-backs-down/#comment-2059852 
-There is a thread about it on the reprap forums here: http://forums.reprap.org/read.php?1,417199 
-There is a work-around for the problem (forcing driver installation, for Windows) here: http://forums.reprap.org/read.php?1,417199,418768#msg-418768
-If the chip has been effected by the driver (ie deemed fake), the device PID is set to '0000'. You can check this in the Mac System Profiler, or on Ubuntu open a terminal window, run "lsusb" and it should show a device at "0403:0000". If you use Ubuntu, there is a tool for resetting the device PID correctly: http://www.minipwner.com/index.php/unbrickftdi000 Then update the FTDI drivers on your machines so it doesn't rebrick the FTDI chip.
-
+### 컴퓨터가 Melzi 메인보드를 인식하지 못할 때
 프린터가 연결된 컴퓨터를 바꾸면 Melzi 메인보드를 인식하지 못할 수 있다.  
+Mac이나 Linux는 자동으로 드라이버를 인식하는 경우가 많은데,  
+Windows는 드라이버를 수동으로 설치해주어야 한다.
 이 때는 다음 링크를 통해서 드라이버를 다운받는다. [FTDI driver 다운받기](http://www.ftdichip.com/Drivers/VCP.htm)  
 드라이버를 설치하는 방법은 다음 링크를 참고한다. [FTDI driver 설치하기](http://forums.reprap.org/read.php?1,417199,418768#msg-418768)
+
+#### Windows용 드라이버 설치
+
+1. 위에서 다운로드 받은 FTDI 드라이버의 압축을 푼다.
+2. 장치관리자를 열어서 `FT232R USB UART`을 찾는다.
+3. 마우스 오른쪽 버튼을 클릭해서 `속성 > 드라이버 > 드라이버 업데이트`를 선택
+4. 압축을 푼 FTDI 드라이버의 위치를 찾아준다.
 
 ## Software
 
 사용하게될 소프트웨어는 크게 세 가지로 구분할 수 있다.  
 
  - 호스트(Host)  
-	ex) Repetier Host, Printrun
+   컴퓨터와 3D 프린터를 연결해주는 소프트웨어이다.  
+   3D 프린터의 X, Y, Z축의 움직임과 압출기 그리고 Hotend와 Heated Bed의 온도를 제어할 수 있다.
+   ex) Repetier Host, Printrun
  
  - 슬라이서(Slicer)  
-	ex) Cura, Sli3r
+   로드한 STL 파일을 각 층(layer)별로 잘라서 압출기가 움직이는 경로를 정해준다.  
+   ex) Cura, Sli3r
  
  - CAD  
-	ex) FreeCAD, AutoCAD, 123D Design
+   모델링 프로그램이다. FreeCAD도 괜찮고 123D Design을 사용하는 것도 좋다. 
+   ex) FreeCAD, AutoCAD, 123D Design, Blender
  
-모델링을 하지 않을 것이라면 CAD 프로그램을 필요하지 않으므로  
-3D 프린터를 다루기 위해 필수적으로 사용하는 것은 *호스트*와 *슬라이서*이다.
+보정 구름에서는 모델링 교육을 하지 않을 것이므로  
+우리가 3D 프린터를 다루기 위해 필수적으로 사용하는 것은 *호스트*와 *슬라이서*이다.
 
-보정 구름에서는 Repetier Host와 Sli3r을 사용한다.
+우리는 Repetier Host와 Sli3r을 사용한다.
 
 ### Repetier Host
 
