@@ -1,7 +1,8 @@
 # 3D 프린터
+![3D 프린터 설명](/3D_Printer/Cloud_3D_Printer_Details.png)
 
 ## 메인보드
-![](/3D_Printer/Cloud_3D_Printer_Motherboard.png)
+![Melzi Reprap 메인보드](/3D_Printer/Cloud_3D_Printer_Motherboard.png)
 
 [Melzi Reprap 1.1](http://reprap.org/wiki/Melzi)  
 
@@ -27,20 +28,20 @@ Mac이나 Linux는 자동으로 드라이버를 인식하는 경우가 많은데
 사용하게될 소프트웨어는 크게 세 가지로 구분할 수 있다.  
 
  - 호스트(Host)  
+
    컴퓨터와 3D 프린터를 연결해주는 소프트웨어이다.  
    3D 프린터의 X, Y, Z축의 움직임과 압출기 그리고 Hotend와 Heated Bed의 온도를 제어할 수 있다.  
    ex) Repetier Host, Printrun
  
  - 슬라이서(Slicer)  
+   
    로드한 STL 파일을 각 층(layer)별로 잘라서 압출기가 움직이는 경로를 정해준다.  
    ex) Cura, Sli3r
  
  - CAD  
+   
    모델링 프로그램이다. FreeCAD도 괜찮고 123D Design을 사용하는 것도 좋다.  
    ex) FreeCAD, AutoCAD, 123D Design, Blender
- 
-보정 구름에서는 모델링 교육을 하지 않을 것이므로  
-우리가 3D 프린터를 다루기 위해 필수적으로 사용하는 것은 *호스트*와 *슬라이서*이다.
 
 우리는 Repetier Host와 Sli3r을 사용한다.
 
