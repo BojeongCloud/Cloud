@@ -1,4 +1,4 @@
-![](https://officesnapshots.com/wp-content/uploads/2016/01/instacart-office-design-10.jpg)
+![깔끔한 사무실 모습](https://officesnapshots.com/wp-content/uploads/2016/01/instacart-office-design-10.jpg)
 
 - 넓은 책상이 필요
 
@@ -17,3 +17,5 @@
 - 데스크탑을 지양하고 랩탑을 사용
 
   - 상당히 옛날 노트북(윈도우 XP) 1개 제공 가능 - (강승원)
+  - 노트북은 30만원이면 프로그래밍 용으로 나쁘지 않은 것을 살 수 있다 (하지만 30만원이 적은 돈은 아니지...)
+    [다나와 - 노트북 최저가](http://prod.danawa.com/list/?cate=1131348&15main_11_03)
