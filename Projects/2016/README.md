@@ -10,7 +10,7 @@
 
 ## 개인 프로젝트 링크
 
-[Snake - 강승원 졸업생](https://github.com/Manicarus/Snake)
+[Snake - 강승원 졸업생](https://github.com/Manicarus/Snake)  
 [Tetris - 보정 구름 4기 홍윤기](https://github.com/yoonki1207/Tetris)
 
 ## 알림
