@@ -6,7 +6,7 @@
 
 ### Introducing Edwith
 This is written in English, but don't panic!
-Edwith provides nice lectures for learning Python.
+[Edwith](http://www.edwith.org/) provides nice lectures for learning Python.
 
 ### 원로원 회의
 [원로원 회의록 2016.10.30](https://github.com/Manicarus/BJCloud/blob/master/2016/Senatus/Senatus_161030.md)
