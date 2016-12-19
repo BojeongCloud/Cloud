@@ -4,8 +4,12 @@
 
 ## 알립니다
 
+### Introducing Edwith
+This is written in English, but don't panic!
+[Edwith](http://www.edwith.org/) provides nice lectures for learning Python.
+
 ### 원로원 회의
-[원로원 회의록 2016.07.23](https://github.com/Manicarus/BJCloud/blob/master/2016/Senatus/Senatus_160723.md)
+[원로원 회의록 2016.10.30](https://github.com/Manicarus/BJCloud/blob/master/2016/Senatus/Senatus_161030.md)
 
 ### 안드로이드 앱 개발 시작
 [와인 깃허브 링크](https://github.com/Manicarus/Wine)
