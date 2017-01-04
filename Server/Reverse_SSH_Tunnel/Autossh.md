@@ -6,7 +6,7 @@
 다음 명령어를 동아리 서버 부팅시에 자동으로 실행되도록 설정하고자 한다.
 
 ```
-autossh -M 0 -N -q -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -p 22 -l pi bjcrpi.strangled.net -L 8080:localhost:22 -i /home/administrator/.ssh/id_rsa
+autossh -M 0 -N -q -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -p 22 -l pi bjcrpi.strangled.net -R 8080:localhost:22 -i /home/administrator/.ssh/id_rsa
 ```
 
 하지만, SSH 접속을 하기 위해서는 비밀번호를 입력해야 하는 과정이 필요하다. 이는 다소 번거롭기 때문에, 비밀번호를 입력하지 않아도 접속이 허용되도록 해주고자 한다.
