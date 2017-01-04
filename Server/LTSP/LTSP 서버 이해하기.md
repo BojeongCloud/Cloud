@@ -79,36 +79,47 @@ LG U+ 등의 통신사들로부터 할당받은 한 개의 IP를 여러 장치�
 | Gateway        | 192.168.10.1   |
 | DNS Server     | 192.168.10.1   |
 
-#### 1. 네크워크 어댑터에 고정 IP 할당
-LTSP 서버가 DHCP 기능을 시작할 때, 운영체제 전반 뿐만 아니라 네트워크 어댑터가 수동 IP를 할당 받을 수 있도록 한다. 다음 명령어를 입력하여 파일을 수정한다.
+Gateway와 DNS는 라우터의 위치를 가리키도록 한다.
+
+참고문헌에서는 `/etc/network/interfaces`와 `/etc/NetworkManager/NetworkManager.conf`을 수정해서 고정 IP를 할당하였는데, 부팅 후 자동으로 DNS를 찾지 못하는 문제점이 있었다. 대신에, 오른쪽 상단 메뉴바의 네트워크 설정을 수정해서 고정 IP를 할당하였다.
+
+> `/etc/network/interfaces` 파일에 DNS 정보(dns-nameservers)를 입력하였지만, Network Manager에서 인식하지 못하는 문제가 있었다. 
+
+![Network Manager](http://lh4.ggpht.com/_1QSDkzYY2vc/TPQFwUY-KJI/AAAAAAAACXE/NzO_5ataJkg/s2000/network-manager-applet.png)
+
+따라서 네트워크 매니저(Network Manager) 상에서 정적 IP를 할당하도록 한다. 이는 GUI에서도 가능하지만, 원격으로 서버를 운영할 때는 CLI 환경을 마주하기 때문에, 터미널 상에서 네트워크를 설정하는 방법에 대해서 알아보도록 하겠다. 다만 초기 설정을 하는 것은 원격에서 하지 않고 서버 컴퓨터에 직접 접속해서 하도록 한다.
+
+네트워크 매니저를 CLI 환경에서 다루기 위해서 필요한 명령어는 `nmcli`이다. 다음 명령어를 입력하여 새로운 연결(My-Connection)을 만들 수 있다:
 
 ```
-sudo gedit /etc/network/interfaces
+nmcli con add type ethernet con-name My-Connection ifname enp2s4 \
+ipv4.addresses 192.168.10.2/24 \
+ipv4.gateway 192.168.10.1 \
+ipv4.dns "192.168.10.1 8.8.8.8"
 ```
 
-다음 내용을 입력해준다.
+> IP 주소 말미에 24라고 명시한 부분은 넷마스트(Netmask)이다. `255.255.255.0`을 이진수로 변환하면 `11111111.11111111.11111111.00000000`인데, 1의 개수가 총 24인 것과 연관이 있다.
+>
+> `8.8.8.8`은 구글에서 제공하는 DNS이다. 생략해도 무방하다.
+
+만약 기존의 연결을 수정하고 싶다면 위 명령어에서 `add` 대신에 `mod`를 사용하면 된다:
 
 ```
-auto enp2s4
-iface enp2s4 inet static
-    address 192.168.10.2
-    netmask 255.255.255.0
-    broadcast 192.168.10.255
-    gateway 192.168.10.1
+nmcli con mod ...
 ```
 
-#### 2. 네트워크 어댑터가 고정 IP를 할당받아 사용한다는 것을 운영체제에게 알림
-다음 명령어를 입력하여 수정하려는 파일을 연다.
+신규 생성 또는 수정한 연결을 사용하기 위해서는 다음 명령어를 입력한다.
 
 ```
-sudo gedit /etc/NetworkManager/NetworkManager.conf
+nmcli con down LTSP-server
+nmcli con up LTSP-server
 ```
 
-`managed=false`로 되어 있는 것을 `managed=true`로 수정한다.
+> `nmcli con show` 명령어를 입력하면 네트워크 매니저에 설정한 연결을 모두 볼 수 있다. 이 명령어에 `-p` 또는 `--pretty` 옵션을 주면 더욱 구체적인 정보를 얻을 수 있다.
 
 ### LTSP 서버 설치하기
 
-가상머신에 리눅스를 처음 설치하고 나면 터미널을 열고 다음 명령을 입력한다:
+리눅스 설치를 완료하고 터미널을 열어서 다음 명령을 입력한다:
 
 ```
 sudo apt-get update && sudo apt-get upgrade
@@ -128,3 +139,5 @@ LTSP 클라이언트는 자체 HDD를 가지고 있지 않아도 된다. 하지�
 ## 참고문헌
 
 [우분투 LTSP 서버 구축하기 (영어)](https://www.thefanclub.co.za/how-to/how-create-ubuntu-1104-x64-ltsp-server-32bit-thin-clients)
+
+[`nmcli` 명령어 사용법 - 페도라](https://docs.fedoraproject.org/en-US/Fedora/25/html/Networking_Guide/sec-Connecting_to_a_Network_Using_nmcli.html)
