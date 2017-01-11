@@ -1,6 +1,8 @@
 # Virtual Network Computing(VNC) Server
 
-리눅스 CUI 터미널 환경에 익숙한 사용자는 SSH로 충분하겠지만, 때로는 GUI 상에서 작업을 해야할 필요도 있다. 따라서 보정 구름에서도 VNC 서버를 운영하고 있다. VNC 클라이언트 사용법은 RealVNC를 기준으로 설명하겠다.
+리눅스 CUI 터미널 환경에 익숙한 사용자는 SSH로 충분하겠지만, 때로는 GUI 상에서 작업을 해야할 필요도 있다. 따라서 보정 구름에서도 VNC 서버를 운영하고 있다. VNC 클라이언트 사용법은 VNC Viewer를 기준으로 설명하겠다.
+
+## VNC 서버 설치
 
 ```
 sudo apt-get update
@@ -41,6 +43,15 @@ ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth
 
 [Install]
 WantedBy=multi-user.target
+```
+
+## VNC 클라이언트 설치
+서버에 접속하는데 사용할 클라이언트 소프트웨어는 [VNC Viewer](https://www.realvnc.com/download/viewer/)이다. 리눅스, 맥, 윈도우, 안드로이드 등 다양한 운영체제를 지원한다.
+
+클라이언트 상단 공란에 VNC 서버 주소를 입력한다.
+
+```
+bjcrpi.strangled.net:5900
 ```
 
 ## 참고문헌
