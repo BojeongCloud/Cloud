@@ -1,8 +1,8 @@
-# 네트워크 구성도
+# 보정 구름 네트워크 구성도
 
 > 동아리 구석에 LAN 포트가 상하 두 개가 있는데, 하단 포트에 연결해서 사용하도록 한다.
 
-![네트워크 구성도](./Network\ Topology.svg)
+![네트워크 구성도](./Network_Topology.png)
 
 ## WeVo 11AC NAS Router
 
