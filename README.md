@@ -11,6 +11,9 @@ This is written in English, but don't panic!
 ### 원로원 회의
 [원로원 회의록 2016.10.30](https://github.com/Manicarus/BJCloud/blob/master/2016/Senatus/Senatus_161030.md)
 
+### 깃허브 사용법
+깃허브 사용법에 대한 정보는 [다른 블로그의 글](https://nolboo.kim/blog/2013/10/06/github-for-beginner/)을 참고하세요.
+
 ### 안드로이드 앱 개발 시작
 [와인 깃허브 링크](https://github.com/Manicarus/Wine)
 아무 것도 없는 것은 기분탓! ~~하하하하핫~~
