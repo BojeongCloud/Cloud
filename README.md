@@ -14,10 +14,6 @@ This is written in English, but don't panic!
 ### 깃허브 사용법
 깃허브 사용법에 대한 정보는 [다른 블로그의 글](https://nolboo.kim/blog/2013/10/06/github-for-beginner/)을 참고하세요.
 
-### 안드로이드 앱 개발 시작
-[와인 깃허브 링크](https://github.com/Manicarus/Wine)
-아무 것도 없는 것은 기분탓! ~~하하하하핫~~
-
 ### 문서작성
 특별한 경우가 아니면 서체는 **맑은고딕** 또는 **나눔고딕**을 사용해주세요.  
 소스코드의 한글이 깨지는 것을 막기위해 텍스트 인코딩을 유니코드(UTF-8)로 설정해주세요.  
