@@ -4,8 +4,8 @@
 
 ## 알립니다
 
-## Python
-2017년부터는 파이썬을 동아리 공식 프로그래밍 언어로 사용하겠습니다. 인터넷 강의를 들으면서 파이썬을 배워보고 싶으면 [Edwith](http://www.edwith.org/)를 방문해보세요.
+## 파이썬(Python)
+2017년부터는 파이썬을 동아리 공식 프로그래밍 언어로 사용하겠습니다. 인터넷 강의를 들으면서 파이썬을 배워보고 싶으면 [Edwith](http://www.edwith.org/)를 방문해보세요. 겨울 선행학습 간에 사용하는 파이썬 교육 자료는 [점프 투 파이썬](https://wikidocs.net/book/1)과 [파이썬을 이용한 시스템 트레이닝](https://wikidocs.net/book/110)입니다.
 
 ### 원로원 회의
 [원로원 회의록 2016.10.30](https://github.com/Manicarus/BJCloud/blob/master/2016/Senatus/Senatus_161030.md)
