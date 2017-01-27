@@ -1,8 +1,8 @@
 ## C언어의 개론적인 이야기
 
-###프로그래밍 언어란?
+### 프로그래밍 언어란?
 
-![Compiler Metaphor](/Images/ForMentors/01/Compiler.jpg)
+![Compiler Metaphor](images/Compiler.jpg)
 
 컴퓨터는 사람의 말을 하지 못하고, 사람은 기계어를 하지 못한다.  
 그래서 사람의 언어를 닯은 새로운 언어(프로그래밍 언어)와
@@ -29,7 +29,7 @@ CPU, 운영체제(OS) 등이 달라도 실행 가능하다.
 절차지향적이란 정해진 순서의 흐름을 중요시한다는 것을 의미한다.
 
 ### 프로그램의 완성과정
-![CAssemblyMachine](/Images/ForMentors/01/CAssemblyMachine.png)
+![CAssemblyMachine](images/CAssemblyMachine.png)
 
 #### 완성과정의 이해
 1. 프로그램의 작성
@@ -44,16 +44,16 @@ CPU, 운영체제(OS) 등이 달라도 실행 가능하다.
 
 ### HelloWorld.c
     #include <stdio.h>
-    
+
     int main()
 	{
         printf("Hello World! \n");
-		
+
         // 이곳은 한 줄짜리 주석을 작성하는 곳입니다.
-		
+
 		/* 이곳은 여러 줄의 주석을 작성하는 곳입니다.
 		 * 이렇게 한 줄 이상의 주석을 작성할 수 있습니다.*/
-		
+
         return 0;
     }
 
@@ -75,7 +75,7 @@ stdio.h 헤더파일에는 printf 호출에 필요한 정보가 들어있다.
 ### 명령어와 인자
 `printf("Hello World! \n");`  
 
-![Console](/Images/ForMentors/01/Console.jpg)
+![Console](images/Console.jpg)
 
 HelloWorld.c를 실행하면 나타나는 검은 창을 콘솔(Console)이라고 부르는데,  
 printf는 콘솔으로의 출력을 담당하는 함수이다.
@@ -86,7 +86,7 @@ printf는 콘솔으로의 출력을 담당하는 함수이다.
 함수를 종료하고 0을 반환한다.  
 정상적으로 함수가 종료되었다면 0을 반환하고,  
 비정상적으로 함수가 종료된 경우에는 0이 아닌 값을 반환한다.
- 
+
 ### 주석
 `// 한 줄짜리 주석`  
 `/* 여러 줄의 주석 */`  

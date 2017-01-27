@@ -17,7 +17,7 @@
 소스코드에서 한글이 깨진다면 텍스트 인코딩을 유니코드(UTF-8)로 설정해보세요.  
 
 ### 개발환경
-동아리는 리눅스 LTSP 서버를 관리하고 있습니다. Jetbrains에서 제공하는 [Pycharm Edu](https://www.jetbrains.com/pycharm-edu/)를 동아리 공식 개발환경으로 사용합니다.
+동아리는 우분투(Ubuntu) LTSP 서버를 관리하고 있습니다. Jetbrains에서 제공하는 [Pycharm Edu](https://www.jetbrains.com/pycharm-edu/)를 동아리 공식 개발환경으로 사용합니다.
 
 ### 이 문서는 마크다운으로 편집되었습니다.
 마크다운 문법을 배우고자 한다면 [서지스원@IT](http://sergeswin.com/1013#) 블로그를 참조하세요.
